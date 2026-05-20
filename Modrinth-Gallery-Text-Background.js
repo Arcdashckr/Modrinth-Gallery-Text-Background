@@ -29,10 +29,10 @@
             INFO: "color: #3b82f6; font-weight: bold;",
             SUCCESS: "color: #22c55e; font-weight: bold;",
             WARN: "color: #f59e0b; font-weight: bold;",
-            SYSTEM: "background: #3b82f6; color: white; padding: 2px 5px; border-radius: 3px;"
+            SYSTEM: "background: #16181C; color: #1BD96A; padding: 2px 5px; border-radius: 3px;"
         };
 
-        console.log(`%c[Modrinth-Gallery][${type}]%c ${message}`, styles.SYSTEM, styles[type]);
+        console.log(`%c[Modrinth-Gallery]%c [${type}] ${message}`, styles.SYSTEM, styles[type]);
     }
 
     function isGalleryPage() {
@@ -41,7 +41,7 @@
 
     function applyStyle() {
         const elements = document.querySelectorAll(
-            '.expanded-image-modal .content .floating .text[data-v-b80ce4e8]'
+            '.expanded-image-modal .content .floating .text'
         );
 
         if (elements.length > 0) {
